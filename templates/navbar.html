@@ -1,12 +1,12 @@
 {% load static %}
 <header>
     <div class="logo">
-        <img src="{% static 'image/a1.png' %}" alt="Amazon">
+        <div class="brand-logo">amazon<span>.in</span></div>
     </div>
 
     <div class="location">
-        <div class="location-icon">
-            <img src="{% static 'image/location.png' %}" alt="">
+        <div class="location-pin">
+            <i class="fa-solid fa-location-dot"></i>
         </div>
         <div class="location-text">
             <div class="delivering">Delivering to New Delhi 110005</div>
@@ -21,7 +21,7 @@
             <option>Books</option>
             <option>Fashion</option>
         </select>
-        <input type="text" class="search_box">
+        <input type="text" class="search_box" aria-label="Search">
         <div class="search_icon">
             <i class="fa-solid fa-magnifying-glass"></i>
         </div>
@@ -38,11 +38,11 @@
     <div class="account">
         <div class="sign_in">
             <p>Hello, sign-in</p>
-            <p>Account & Lists</p>
+            <strong>Account &amp; Lists</strong>
         </div>
         <div class="order">
             <p>Returns</p>
-            <p>& Orders</p>
+            <strong>&amp; Orders</strong>
         </div>
         <div class="cart_icon">
             <div class="cart_count">0</div>

@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path  # type: ignore[import-not-found]
 from amazon import views
 
 urlpatterns = [

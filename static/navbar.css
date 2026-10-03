@@ -4,3 +4,156 @@
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
+body {
+    background: #fff;
+    color: #111;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: #131921;
+    color: white;
+    padding: 10px 18px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    min-width: 120px;
+}
+
+.brand-logo {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1;
+    color: white;
+}
+
+.brand-logo span {
+    font-size: 12px;
+    vertical-align: top;
+    color: #ffbd69;
+    margin-left: 2px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 180px;
+    color: #ddd;
+}
+
+.location-pin {
+    color: #ff9900;
+    font-size: 18px;
+}
+
+.delivering {
+    font-size: 12px;
+    color: #cfcfcf;
+}
+
+.update {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 300px;
+    max-width: 740px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.dropdown select {
+    padding: 14px 10px;
+    border: none;
+    background: #f3f3f3;
+    color: #333;
+    font-size: 14px;
+}
+
+.search_box {
+    flex: 1;
+    border: none;
+    padding: 14px 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search_icon {
+    width: 48px;
+    height: 48px;
+    background: #febd69;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.language select {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding: 8px 4px;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: white;
+}
+
+.sign_in,
+.order {
+    line-height: 1.2;
+    font-size: 12px;
+}
+
+.sign_in strong,
+.order strong {
+    display: block;
+    font-size: 14px;
+}
+
+.cart_icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+}
+
+.cart_count {
+    color: #f08804;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cart_emoji {
+    font-size: 24px;
+}
+
+@media (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .dropdown {
+        order: 4;
+        width: 100%;
+        max-width: none;
+    }
+}

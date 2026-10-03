@@ -1,5 +1,5 @@
+# pyright: reportMissingModuleSource=false
 from django.shortcuts import render
-
 
 def home(request):
     sidebar_sect = [
